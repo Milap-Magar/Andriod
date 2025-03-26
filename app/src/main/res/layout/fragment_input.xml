@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:id="@+id/inputcontainer"
+    tools:context=".InputFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input Fragment"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:paddingBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/empid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Employee ID"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/empname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Employee Name"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/empsalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Employee Salary"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnsend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send to Output Fragment"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
