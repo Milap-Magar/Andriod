@@ -36,6 +36,12 @@ public class OptionMenuActivity extends AppCompatActivity {
         if(id == R.id.menu_profile) {
             Toast.makeText(this, "Profile menu item is clicked", Toast.LENGTH_SHORT).show();
         }
+        if(id == R.id.menu_setting) {
+            Toast.makeText(this, "Settings menu item is clicked", Toast.LENGTH_SHORT).show();
+        }
+        if(id == R.id.menu_exit) {
+            Toast.makeText(this, "Exit menu item is clicked", Toast.LENGTH_SHORT).show();
+        }
         return super.onOptionsItemSelected(item);
     }
 }
