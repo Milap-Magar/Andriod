@@ -3,8 +3,11 @@ package com.example.fragment;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
@@ -25,5 +28,14 @@ public class OptionMenuActivity extends AppCompatActivity {
         MenuInflater inflater = new MenuInflater(this);
         inflater.inflate(R.menu.option_menu, menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id =item.getItemId();
+        if(id == R.id.menu_profile) {
+            Toast.makeText(this, "Profile menu item is clicked", Toast.LENGTH_SHORT).show();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

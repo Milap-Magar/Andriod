@@ -11,7 +11,12 @@
     <item
         android:id="@+id/menu_option"
         android:title="More Option"
-        />
+        >
+        <menu>
+            <item android:id="@+id/menu_device" android:title="device_settings"/>
+            <item android:id="@+id/menu_logout" android:title="Logout"/>
+        </menu>
+    </item>
     <item
         android:id="@+id/menu_exit"
         android:title="Exit"
